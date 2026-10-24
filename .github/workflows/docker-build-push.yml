@@ -37,7 +37,6 @@ jobs:
             build.run_id=${{ github.run_id }}
             build.run_number=${{ github.run_number }}
 
-
   deploy:
     name: Deploy to EC2 via AWS SSM
     needs: build-and-push
