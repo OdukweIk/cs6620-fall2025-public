@@ -63,6 +63,7 @@ jobs:
               "docker rm cs6620-app || true",
               "docker run -d --name cs6620-app -p 80:5000 --restart unless-stopped ${{ secrets.DOCKERHUB_USERNAME }}/cs6620-app:latest"
             ]}' \
-            --region ${{ secrets.AWS_REGION }}
+            --region us-east-1
+            
 
 
