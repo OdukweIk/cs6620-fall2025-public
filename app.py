@@ -44,6 +44,7 @@ def time_to_seconds(time_str):
     except (ValueError, AttributeError):
         return 0.0
 
+
 def parse_log_content(log_content):
     """
     Parses the log content to extract error segments for each audio file.
